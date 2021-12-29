@@ -27,6 +27,11 @@ body {
     color: white;
 }
 
+@media (min-width: 700px) {
+    body {
+        background-image: url(./images/bg-intro-desktop.png);
+    }
+}
 /* ======
     Typo
     ====== */
@@ -192,7 +197,6 @@ body {
     background-color: var(--clr-green);
     color: inherit;
     font-family: inherit;
-    font-size: inherit;
     letter-spacing: 1px;
     font-weight: 500;
     border: none;
@@ -209,10 +213,3 @@ body {
 .btn-submit {
     box-shadow: 0 5px 0px hsl(154, 59%, 40%);
 }
-
-/* Form Validation */
-
-/* .error-img,
-.error-message {
-    display: none;
-} */
