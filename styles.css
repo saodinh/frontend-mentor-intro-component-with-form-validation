@@ -1,0 +1,11 @@
+:root {
+    --clr-red: hsl(0, 100%, 74%);
+    --clr-green: hsl(154, 59%, 51%);
+    --clr-blue-600: hsl(248, 32%, 49%);
+    --clr-blue-800: hsl(249, 10%, 26%);
+    --clr-blue-400: hsl(246, 25%, 77%);
+}
+
+html {
+    font-size: 62.5%;
+}
