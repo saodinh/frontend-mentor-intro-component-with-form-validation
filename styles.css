@@ -9,3 +9,210 @@
 html {
     font-size: 62.5%;
 }
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    background-color: var(--clr-red);
+    background-image: url(./images/bg-intro-mobile.png);
+    color: white;
+}
+
+/* ======
+    Typo
+    ====== */
+
+.title,
+.subtitle {
+    text-align: center;
+}
+
+.title {
+    font-size: 2.7rem;
+    line-height: 1.3;
+    margin-bottom: 2rem;
+}
+
+.subtitle {
+    line-height: 1.6;
+}
+
+@media (min-width: 700px) {
+    .title,
+    .subtitle {
+        text-align: left;
+    }
+
+    .title {
+        font-size: 5rem;
+        line-height: 1.1;
+    }
+}
+
+.price-text {
+    text-align: center;
+    background-color: var(--clr-blue-600);
+    padding: 2rem 5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+.price-text,
+.main-form {
+    border-radius: 1rem;
+}
+
+/* ======
+    Layout
+    ====== */
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 87%;
+    max-width: 1100px;
+    margin: 8rem 0;
+    gap: 6rem;
+}
+
+@media (min-width: 700px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .main-form-container {
+        width: 50%;
+    }
+
+    .main-text {
+        width: 50%;
+        align-self: center;
+    }
+}
+
+/* Form */
+
+.main-form {
+    background-color: white;
+    padding: 2.5rem;
+}
+
+@media (min-width: 700px) {
+    .main-form {
+        padding: 4rem;
+    }
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.main-form input {
+    display: block;
+    font-family: inherit;
+    font-weight: 600;
+    padding: 1.6rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 1px solid var(--clr-blue-400);
+}
+
+.main-form input:focus {
+    outline: none;
+    border-width: 3px;
+}
+
+@media (min-width: 700px) {
+    .main-form input {
+        padding: 1.6rem 2.8rem;
+    }
+}
+
+.input-wrapper {
+    margin-top: 2rem;
+}
+
+.input-wrapper:first-child {
+    margin-top: 0;
+}
+
+.main-form input::placeholder {
+    font-weight: 700;
+}
+
+.error-img {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.error-message {
+    color: var(--clr-red);
+    font-size: 1.2rem;
+    text-align: right;
+    margin-top: 0.5rem;
+}
+
+.fineprint {
+    color: var(--clr-blue-400);
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.fineprint a {
+    color: var(--clr-red);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.btn-submit {
+    text-transform: uppercase;
+    background-color: var(--clr-green);
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border: none;
+    padding: 1.5rem 4rem;
+    cursor: pointer;
+    margin: 2rem 0;
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+    background-color: hsl(154, 59%, 60%);
+}
+
+.btn-submit {
+    box-shadow: 0 5px 0px hsl(154, 59%, 40%);
+}
+
+/* Form Validation */
+
+/* .error-img,
+.error-message {
+    display: none;
+} */
