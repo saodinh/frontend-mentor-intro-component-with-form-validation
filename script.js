@@ -18,13 +18,13 @@ form.addEventListener("submit", (e) => {
 
     clearErrors();
 
-    if (firstName.value === "") createError(0);
-    if (lastName.value === "") createError(1);
-    if (!emailRegex.test(email.value)) createError(2);
-    if (password.value === "") createError(3);
+    if (firstName.value === "") displayErrors(0);
+    if (lastName.value === "") displayErrors(1);
+    if (!emailRegex.test(email.value)) displayErrors(2);
+    if (password.value === "") displayErrors(3);
 });
 
-function createError(index) {
+function displayErrors(index) {
     // create error message and the error icon
     inputWrappers[index].insertAdjacentHTML(
         "beforeend",
