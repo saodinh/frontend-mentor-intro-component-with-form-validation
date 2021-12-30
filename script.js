@@ -34,6 +34,8 @@ function displayErrors(index) {
 
     // Add color Red for border of the error input
     inputWrappers[index].querySelector("input").style.border = "2px solid hsl(0, 100%, 74%)";
+    // Add color Red to the value of the error input
+    inputWrappers[index].querySelector("input").style.color = "hsl(0, 100%, 74%)";
 }
 
 function clearErrors() {
