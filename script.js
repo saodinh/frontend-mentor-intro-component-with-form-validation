@@ -49,4 +49,6 @@ function clearErrors() {
     inputWrappers.forEach(
         (inputWrapper) => (inputWrapper.querySelector("input").style.border = "1px solid hsl(246, 25%, 77%)")
     );
+    // Remove color Red from the input value
+    inputWrappers.forEach((inputWrapper) => (inputWrapper.querySelector("input").style.color = "black"));
 }
